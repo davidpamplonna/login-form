@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Formulário de Login</title>
+  </head>
+  <body>
+    <main>
+      <form class="form">
+        <div class="login-title">
+            <h1>Login</h1>
+            <i class='bx bxs-moon' ></i>
+        </div>
+        <div class="inputs-box">
+            <div class="input-itens">
+                <label for="name">
+                    <div class="input-field">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" required>
+                    </div>
+                </label>
+            </div>
+            <div class="input-itens">
+                <label for="mail">
+                    <div class="input-field">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="mail" required>
+                    </div>
+                </label>
+            </div>
+            <div class="input-itens">
+                <label for="passowrd">
+                    <div class="input-field">
+                        <i class='bx bxs-key'></i>
+                        <input type="passowrd" required>
+                    </div>
+                </label>
+            </div>
+            <div class="forgout">
+                <a href="#">Forgout your passowrd?</a>
+            </div>
+            <div class="midia-social">
+                <p>Connect through social media.</p>
+                <div class="icons-social">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-google' ></i>
+                    <i class='bx bxl-github' ></i>
+                </div>
+            </div>
+        </div>
+       <div class="btn">
+        <button type="submit">To Send</button>
+       </div>
+        <span>Don't have an account? <a href="#">Register</a>.</span>
+      </form>
+    </main>
+  </body>
 </html>
