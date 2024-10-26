@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
   <title>Formuário de Login</title>
 </head>
 <body>
-    
+    <main>
+      <form class="form-login">
+        <div class="title">
+          <h1>Login</h1>
+          <i class='bx bxs-moon'></i>
+        </div>
+        <div class="inputs-content">
+          <div class="input-box">
+            <label for="name">Nome</label>
+            <div class="input-item">
+              <i class='bx bxs-user' aria-label="icon-user"></i>
+              <input type="text" name="name" id="name" required placeholder="Digite seu nome..." >
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="email">E-mail</label>
+            <div class="input-item">
+              <i class='bx bxs-envelope' aria-label="icon-email" ></i>
+              <input type="email" name="email" id="email" required placeholder="Digite seu e-mail..." >
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="password">Senha</label>
+            <div class="input-item">
+              <i class='bx bxs-key' aria-label="icon-password" ></i>
+              <input type="password" name="password" id="password" required placeholder="Digite sua senha..." minlength="8">
+            </div>
+          </div>
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+        <div class="midia-social">
+          <p>Conecte-se através das redes sociais.</p>
+          <div class="midia-icons">
+            <i class='bx bxl-facebook-circle' style='color:#1877f2' aria-label="icon-facebook" ></i>
+            <i class='bx bxl-google' style='color:#ff3d00'  aria-label="icon-google"></i>
+            <i class='bx bxl-github' aria-label="icon-github"></i>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit">Entrar</button>
+        </div>
+        <div class="account">
+          <p>Não tem uma conta?<a href="#" class="register">Cadastre-se</a>.</p>
+        </div>
+      </form>
+    </main>
 </body>
 </html>
