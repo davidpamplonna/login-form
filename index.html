@@ -16,24 +16,24 @@
         </div>
         <div class="inputs-content">
           <div class="input-box">
-            <label for="name">Nome</label>
+            <i class='bx bxs-user' aria-label="icon-user"></i>
             <div class="input-item">
-              <i class='bx bxs-user' aria-label="icon-user"></i>
-              <input type="text" name="name" id="name" required placeholder="Digite seu nome..." >
+              <input type="text" name="name" id="name" required >
+              <label for="name">Nome</label>
             </div>
           </div>
           <div class="input-box">
-            <label for="email">E-mail</label>
+            <i class='bx bxs-envelope' aria-label="icon-email" ></i>
             <div class="input-item">
-              <i class='bx bxs-envelope' aria-label="icon-email" ></i>
-              <input type="email" name="email" id="email" required placeholder="Digite seu e-mail..." >
+              <input type="email" name="email" id="email" required" >
+              <label for="email">E-mail</label>
             </div>
           </div>
           <div class="input-box">
-            <label for="password">Senha</label>
+            <i class='bx bxs-key' aria-label="icon-password" ></i>
             <div class="input-item">
-              <i class='bx bxs-key' aria-label="icon-password" ></i>
-              <input type="password" name="password" id="password" required placeholder="Digite sua senha..." minlength="8">
+              <input type="password" name="password" id="password" maxlength="8">
+              <label for="password">Senha</label>
             </div>
           </div>
           <a href="#">Esqueceu sua senha?</a>
@@ -50,7 +50,7 @@
           <button type="submit">Entrar</button>
         </div>
         <div class="account">
-          <p>Não tem uma conta?<a href="#" class="register">Cadastre-se</a>.</p>
+          <p>Não tem uma conta?<a href="#" class="register"> Cadastre-se</a>.</p>
         </div>
       </form>
     </main>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --color-purple-dark: #753FFF;
+    --color-purple-medium: #8D3AFE;
+    --color-purple-ligth: #CE49FF;
+    --color-white: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--color-purple-dark),var(--color-purple-medium), var(--color-purple-ligth));
+    font-family: "Noto Serif HK", serif
+}
+
+
+/* main-estrutura */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* form-login */
+
+.form-login{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.32);
+    width: 430px;
+
+    /* login-title */
+
+    & .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title h1 {
+        position: relative;
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    & .title h1::after{
+        content: "";
+        width: 42px;
+        height: 4px;
+        position: absolute;
+        border-radius: 40px;
+        background-color: var(--color-purple-dark);
+        top: 45px;
+        left: 0;
+    }
+
+    & i {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* inputs-content */
+
+    & .inputs-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    & .input-box {
+       display: flex;
+       align-items: center;
+       gap: 4px;
+       border-bottom: 1px solid var(--color-purple-ligth);
+       position: relative;
+       
+    }
+
+    & .input-box i {
+        font-size: 20px;
+        color: #505050;
+    }
+
+    & .input-box label {
+        color: #505050;
+        font-size: 15px;
+    }
+
+    & .input-item{
+        width: 100%;
+    }
+
+    & .input-item  input{
+        width: 100%;
+        padding: 0.3rem 0.1rem;
+        border: none;
+    }
+
+    & label {
+        position: absolute;
+        left: 25px;
+        bottom: 2px;
+        transition: 0.4s ease;
+    }
+
+}
