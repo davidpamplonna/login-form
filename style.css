@@ -42,6 +42,7 @@ main {
     padding: 2rem 2rem;
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.32);
     width: 430px;
+    border-radius: 10px;
 
     /* login-title */
 
