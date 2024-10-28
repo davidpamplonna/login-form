@@ -9,34 +9,39 @@
 </head>
 <body>
     <main>
-      <form class="form-login">
+      <form class="form-login" id="login-form">
         <div class="title">
           <h1>Login</h1>
-          <i class='bx bxs-moon'></i>
+          <i class='bx bxs-moon' id="mode-icon"></i>
         </div>
         <div class="inputs-content">
           <div class="input-box">
             <i class='bx bxs-user' aria-label="icon-user"></i>
             <div class="input-item">
-              <input type="text" name="name" id="name" required >
-              <label for="name">Nome</label>
+              <input type="text" name="name" id="name">
+              <label for="name" class="label">Nome</label>
             </div>
+            <span class="erro" id="erroname"></span>
           </div>
           <div class="input-box">
             <i class='bx bxs-envelope' aria-label="icon-email" ></i>
             <div class="input-item">
-              <input type="email" name="email" id="email" required" >
-              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email">
+              <label for="email" class="label">E-mail</label>
             </div>
+            <span class="erro" id="erroemail"></span>
           </div>
           <div class="input-box">
             <i class='bx bxs-key' aria-label="icon-password" ></i>
             <div class="input-item">
-              <input type="password" name="password" id="password" maxlength="8">
-              <label for="password">Senha</label>
+              <input type="password" name="password" id="password " maxlength="8">
+              <label for="password" class="label">Senha</label>
             </div>
+            <span class="erro" id="erropassword"></span>
           </div>
-          <a href="#" class="fogout">Esqueceu sua senha?</a>
+          <div class="fogout">
+            <a href="#" class="fogout">Esqueceu sua senha?</a>
+          </div>
         </div>
         <div class="midia-social">
           <p>Conecte-se através das redes sociais.</p>
@@ -54,6 +59,6 @@
         </div>
       </form>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 </html>

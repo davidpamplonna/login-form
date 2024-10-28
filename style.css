@@ -2,11 +2,12 @@
 
 
 :root {
-    --color-purple-dark: #753FFF;
-    --color-purple-medium: #8D3AFE;
-    --color-purple-light: #CE49FF;
+    --color-purple-dark: #3B3B98;
+    --color-purple-medium: #1B9CFC;
+    --color-purple-light: #25CCF7;
     --color-white: #ffffff;
-    --color-description: #6D6D6D;
+    --color-description: #3D3C3C;
+    --color-dark:#323232
 }
 
 *{
@@ -32,9 +33,45 @@ main {
     height: 100vh;
 }
 
+
+
+/* mode-dark */
+
+.dark#login-form{
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.dark#login-form .input-item input,
+.dark#login-form .input-box i,
+.dark#login-form .input-item label, 
+.dark#login-form .fogout {
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+/* validação de e-mail */
+
+.erro {
+    position: absolute;
+    right: 0;
+    color: red;
+    font-size: 0.8em;
+}
+
+/*  validação de senha */
+
+/* .erropassword {
+    position: absolute;
+    right: 0;
+    color: red;
+    font-size: 0.9em;
+} */
+
 /* form-login */
 
-.form-login{
+
+#login-form{
     background-color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -44,6 +81,7 @@ main {
     width: 430px;
     border-radius: 10px;
 
+    
     /* login-title */
 
     & .title{
@@ -65,7 +103,7 @@ main {
         height: 2px;
         position: absolute;
         border-radius: 40px;
-        background-color: var(--color-purple-dark);
+        background-color: var(--color-purple-light);
         top: 45px;
         left: 0;
     }
@@ -73,7 +111,7 @@ main {
     & .title > i {
         font-size: 2rem;
         cursor: pointer;
-        color: var(--color-purple-dark);
+        color: var(--color-purple-light);
     }
 
     /* inputs-content */
@@ -96,12 +134,36 @@ main {
 
     & .input-box i {
         font-size: 20px;
-        color: #505050;
+        color: #141414;
+        transition: 0.2s ease-in-out;
+        position: absolute;
+        animation-delay: 0.2s;
     }
 
-    & .input-box label {
-        color: #505050;
+    & .input-item.fucused input, .input-box i.focused-icon{
+        bottom: 26px;
+        color: var(--color-purple-light);
         font-size: 15px;
+    }
+
+
+    & .input-box label {
+        color: #141414;
+        font-size: 15px;
+        position: absolute;
+        left: 25px;
+        bottom: 3px;
+        transition: 0.2s ease-in-out;
+        animation-delay: 4s;
+        cursor: text;
+
+    }
+
+    & .input-item.focused  label{
+        font-weight: 500;
+        bottom: 25px;
+        font-size: 13px;
+        color: var(--color-purple-light);
     }
 
     & .input-item{
@@ -114,13 +176,6 @@ main {
         border: none;
     }
 
-    & label {
-        position: absolute;
-        left: 25px;
-        bottom: 2px;
-        transition: 0.4s ease;
-    }
-
     /* fogout-password */
 
     & .fogout{
@@ -128,12 +183,12 @@ main {
         font-size: 13px;
         color: var(--color-description);
         position: relative;
-        bottom: 15px;
+        bottom: 10px;
         transition: 0.2s ease;
     }
 
     & .fogout:hover{
-        color: var(--color-purple-dark);
+        color: var(--color-purple-medium);
     }
 
     /* media-social */
@@ -149,6 +204,7 @@ main {
         margin: 0 0.4rem;
         font-size: 2.5rem;
         transition: 0.2s ease;
+        cursor: pointer;
     }
 
     & .midia-icons i:hover{
@@ -176,6 +232,7 @@ main {
     }
 
     & .account a {
-        color: var(--color-purple-dark);
+        color: var(--color-purple-light);
     }
+
 }
