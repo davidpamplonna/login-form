@@ -92,7 +92,7 @@ function validinput (){
     }
 
     
-    if (validemail && passwordvalue.length == 8){
+    else{
         alert('Login realizado com sucesso');
         location.reload();
     }
