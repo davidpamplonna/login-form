@@ -75,24 +75,28 @@ function validinput (){
 
     const nameinput = inputname.value.trim();
     const emailinput = inputemail.value.trim();
+   
     
 
     msgname.textContent = ''
     msgemail.textContent = ''
 
 
-    if (nameinput === ''){
-        msgname.textContent = 'Preencha o campo corretamente.'
-        valid = false
+
+    if (nameinput === '') {
+        msgname.textContent = 'Preencha o campo corretamente.';
+        valid = false;
     }
 
-    else if (!validemail(emailinput)){
+    if (emailinput === '') {
+        msgemail.textContent = 'Preencha o campo corretamente.';
+        valid = false;
+    } else if (!validemail(emailinput)) {
         msgemail.textContent = 'Por favor, insira um email válido.';
-        valid = false
+        valid = false;
     }
-
     
-    else{
+    else {
         alert('Login realizado com sucesso');
         location.reload();
     }
