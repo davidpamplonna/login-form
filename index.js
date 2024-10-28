@@ -48,6 +48,9 @@ if (formdark) {
     });
 } 
 
+
+
+
 // campos de input 
 const form = document.querySelector('#login-form');
 const  inputname = document.querySelector('#name');
@@ -65,9 +68,7 @@ form.addEventListener('submit', function(event){
     
     event.preventDefault();
 
-    validinput();
-
-    
+    validinput();    
 })
 
 
@@ -107,4 +108,6 @@ function validemail(email){
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+
 
